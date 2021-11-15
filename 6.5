@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- 6.5 exercise.html 
+        Zahraa Al Saeed
+        ACSG-540-01
+        10/31/2021
+        -->
+
+<html lang="en">
+<head>
+  <meta charset="uft-8">
+  <title> 6.5 exercise </title>
+</head>
+<body>
+    <img src="Images/image1.jpg" id="imgSrc" width = '400px' height = '500px'/>
+    <br /><br />
+<input type="submit" name="1" value="image1" id="btn1" onclick="myFunc1(this)"/>
+<input type="submit" name="2" value="image2" id="btn2" onclick="myFunc1(this)"/>
+<input type="submit" name="3" value="image3" id="btn3" onclick="myFunc1(this)"/>
+
+<script type="text/javascript" >
+function myFunc1(id)
+{
+
+document.getElementById('imgSrc').src = "Images/" + id.value + ".jpg"
+}
+</script>
+</body>
+</html>
